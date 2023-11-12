@@ -1,0 +1,72 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "api-comments",
+    "dateExported": "2023-11-12T12:57:27.336Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b2127ee5-1865-4c93-a569-dcabe8db3e26",
+            "colId": "e962fd59-861e-4d8f-bb08-c6acbc635e70",
+            "containerId": "",
+            "name": "/comments",
+            "url": "/",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2023-11-11T14:35:35.496Z",
+            "modified": "2023-11-11T16:58:07.519Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NGY5MDg3ZDYxZjkxODA1MjA3NWUwOSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY5OTcxOTc1OH0.rL00Gb00bNt9HOaRt0yOmAYJsc1elhRAVoo_lBGD_MY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"comment\": \"que pasa 3\",\n    \"date\": \"2010\",\n    \"userId\": \"manolo\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cc0064eb-fe7c-4a33-8991-f8cfcfbe6501",
+            "colId": "e962fd59-861e-4d8f-bb08-c6acbc635e70",
+            "containerId": "",
+            "name": "/comments/:commentId",
+            "url": "/654f923ad61f918052075e10",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-11-11T14:35:35.497Z",
+            "modified": "2023-11-11T14:40:33.184Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"comment\": \"que pasa (update)\",\n    \"date\": \"2010\",\n    \"comicId\": \"654f389d3a5ed7026cf8fb3a\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "14077bfb-0c4e-447b-b737-ad764e3d606a",
+            "colId": "e962fd59-861e-4d8f-bb08-c6acbc635e70",
+            "containerId": "",
+            "name": "/comments/:commentId",
+            "url": "/654f923ad61f918052075e10",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-11-11T14:35:35.498Z",
+            "modified": "2023-11-11T14:41:10.456Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "{{host}}/comments"
+        },
+        "envId": "89e7b500-c385-4f43-ba9b-ab6eb2b8b81d"
+    }
+}

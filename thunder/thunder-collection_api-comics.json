@@ -1,0 +1,124 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "api-comics",
+    "dateExported": "2023-11-12T12:57:18.111Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "776a88f3-785a-49bb-8930-665148d7330b",
+            "colId": "cbe8d878-8c33-4382-a60f-e1ee64ba9c10",
+            "containerId": "",
+            "name": "/comics",
+            "url": "/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-09T16:25:30.036Z",
+            "modified": "2023-11-11T14:25:52.577Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5764bac9-369c-4607-b41a-9130ad545fa0",
+            "colId": "cbe8d878-8c33-4382-a60f-e1ee64ba9c10",
+            "containerId": "",
+            "name": "/comics/:comicId",
+            "url": "/654f92fad61f918052075e18",
+            "method": "GET",
+            "sortNum": 17500,
+            "created": "2023-11-11T15:18:44.734Z",
+            "modified": "2023-11-11T15:19:19.953Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8f8c5077-9b13-4e42-997a-e5ccd5986119",
+            "colId": "cbe8d878-8c33-4382-a60f-e1ee64ba9c10",
+            "containerId": "",
+            "name": "/comics",
+            "url": "/",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2023-11-09T18:00:19.961Z",
+            "modified": "2023-11-11T16:24:15.878Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NGY5MDg3ZDYxZjkxODA1MjA3NWUwOSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY5OTcxOTc1OH0.rL00Gb00bNt9HOaRt0yOmAYJsc1elhRAVoo_lBGD_MY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"hoy se va a liar\",\n  \"genre\": \"any\",\n  \"authors\": \"coco\",\n  \"year\": \"2004\",\n  \"commentsID\": [\"654f39461ddb031787d9fc57\"],\n  \"imagen\": \"comic.png\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1a1994b9-96a2-47d4-8bc3-7aa2d91f7235",
+            "colId": "cbe8d878-8c33-4382-a60f-e1ee64ba9c10",
+            "containerId": "",
+            "name": "/comics/:comicId",
+            "url": "/654f92fad61f918052075e18",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-11-09T18:00:40.436Z",
+            "modified": "2023-11-11T14:48:05.717Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"hoy se lia (update)\",\n  \"genre\": \"any\",\n  \"authors\": \"coco\",\n  \"year\": \"2004\",\n  \"commentsID\": [\"654f927cd61f918052075e13\"]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5fa95ad2-ea2c-40c4-a310-ecc997cec998",
+            "colId": "cbe8d878-8c33-4382-a60f-e1ee64ba9c10",
+            "containerId": "",
+            "name": "/comics/favorite",
+            "url": "/654faac0c62e7782ad707249/favorite",
+            "method": "PUT",
+            "sortNum": 35000,
+            "created": "2023-11-11T17:38:48.097Z",
+            "modified": "2023-11-11T18:01:35.785Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NGZjMTY1YzIxYmVlZDBlMTNiYjVkNSIsImlhdCI6MTY5OTcyNTY2OX0.JuovhbmfLvA0ZPo_faO6pERcFq92Gc5oBo9K5WHbo5I"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"hoy se lia (update)\",\n  \"genre\": \"any\",\n  \"authors\": \"coco\",\n  \"year\": \"2004\",\n  \"commentsID\": [\"654f927cd61f918052075e13\"]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "549c725f-b296-4383-bb52-809cf4bc9fc9",
+            "colId": "cbe8d878-8c33-4382-a60f-e1ee64ba9c10",
+            "containerId": "",
+            "name": "/comics/:comicId",
+            "url": "/654f8b24838fb5a0d5ca1c95",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-11-09T18:06:41.563Z",
+            "modified": "2023-11-11T14:31:02.677Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "{{host}}/comics"
+        },
+        "envId": "89e7b500-c385-4f43-ba9b-ab6eb2b8b81d"
+    }
+}
